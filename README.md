@@ -6,7 +6,7 @@ AXAlert shows an alert message when "access for assistive devices" is enabled.
 "access for assistive devices" provides very useful API and many excellent utilities use it.
 But that API is too powerful. It allows all apps to steal your keyboard events via such API.
 
-AXAlert is useful if you don't want to enable "access for assistive devices".
+AXAlert prevents you from enabling on "access for assistive devices" accidentally.
 
 
 Web pages
