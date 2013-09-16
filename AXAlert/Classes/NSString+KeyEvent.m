@@ -7,8 +7,8 @@
   unsigned short keycode = [event keyCode];
 
   if (keycode == 0x35) return @"Escape";
-  if (keycode == 0x36) return @"Left Command";
-  if (keycode == 0x37) return @"Right Command";
+  if (keycode == 0x36) return @"Right Command";
+  if (keycode == 0x37) return @"Left Command";
   if (keycode == 0x38) return @"Left Shift";
   if (keycode == 0x39) return @"CapsLock";
   if (keycode == 0x3a) return @"Left Option";
