@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		341DC7F717E6D7C9003E45FD /* NSString+KeyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 341DC7F617E6D7C9003E45FD /* NSString+KeyEvent.m */; };
+		341DC7FA17E6DCD5003E45FD /* MainMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 341DC7F917E6DCD5003E45FD /* MainMessageView.m */; };
+		344A78D117E13F8800017C28 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344A78D017E13F8800017C28 /* Cocoa.framework */; };
+		344A78DB17E13F8800017C28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 344A78D917E13F8800017C28 /* InfoPlist.strings */; };
+		344A78DD17E13F8800017C28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 344A78DC17E13F8800017C28 /* main.m */; };
+		344A78E417E13F8800017C28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 344A78E317E13F8800017C28 /* AppDelegate.m */; };
+		344A78E717E13F8800017C28 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 344A78E517E13F8800017C28 /* MainMenu.xib */; };
+		34B5488017E170B900358C92 /* KeyboardEventLeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B5487F17E170B900358C92 /* KeyboardEventLeaker.m */; };
+		34E5A74917E72836005F74FF /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E5A74617E72836005F74FF /* PreferencesController.m */; };
+		34E5A74A17E72836005F74FF /* StartAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E5A74817E72836005F74FF /* StartAtLoginController.m */; };
+		34E5A74C17E73827005F74FF /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E5A74B17E73827005F74FF /* Sparkle.framework */; };
+		34E5A74E17E7474A005F74FF /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34E5A74B17E73827005F74FF /* Sparkle.framework */; };
+		34E5A75117E74A6D005F74FF /* AXAlert_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 34E5A75017E74A6D005F74FF /* AXAlert_pub.pem */; };
+		34E5A75317E75FA9005F74FF /* app.icns in Resources */ = {isa = PBXBuildFile; fileRef = 34E5A75217E75FA9005F74FF /* app.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		34E5A74D17E7472D005F74FF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				34E5A74E17E7474A005F74FF /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		341DC7F417E5EB42003E45FD /* NotificationKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotificationKeys.h; path = Classes/NotificationKeys.h; sourceTree = "<group>"; };
+		341DC7F517E6D7C9003E45FD /* NSString+KeyEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+KeyEvent.h"; path = "Classes/NSString+KeyEvent.h"; sourceTree = "<group>"; };
+		341DC7F617E6D7C9003E45FD /* NSString+KeyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+KeyEvent.m"; path = "Classes/NSString+KeyEvent.m"; sourceTree = "<group>"; };
+		341DC7F817E6DCD5003E45FD /* MainMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMessageView.h; path = Classes/MainMessageView.h; sourceTree = "<group>"; };
+		341DC7F917E6DCD5003E45FD /* MainMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMessageView.m; path = Classes/MainMessageView.m; sourceTree = "<group>"; };
+		344A78CD17E13F8800017C28 /* AXAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AXAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		344A78D017E13F8800017C28 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		344A78D317E13F8800017C28 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		344A78D417E13F8800017C28 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		344A78D517E13F8800017C28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		344A78D817E13F8800017C28 /* AXAlert-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AXAlert-Info.plist"; sourceTree = "<group>"; };
+		344A78DA17E13F8800017C28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		344A78DC17E13F8800017C28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		344A78DE17E13F8800017C28 /* AXAlert-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AXAlert-Prefix.pch"; sourceTree = "<group>"; };
+		344A78E217E13F8800017C28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		344A78E317E13F8800017C28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		344A78E617E13F8800017C28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		34B5487E17E170B900358C92 /* KeyboardEventLeaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardEventLeaker.h; path = Classes/KeyboardEventLeaker.h; sourceTree = "<group>"; };
+		34B5487F17E170B900358C92 /* KeyboardEventLeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyboardEventLeaker.m; path = Classes/KeyboardEventLeaker.m; sourceTree = "<group>"; };
+		34E5A74517E72836005F74FF /* PreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreferencesController.h; path = Classes/PreferencesController.h; sourceTree = "<group>"; };
+		34E5A74617E72836005F74FF /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PreferencesController.m; path = Classes/PreferencesController.m; sourceTree = "<group>"; };
+		34E5A74717E72836005F74FF /* StartAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartAtLoginController.h; path = Classes/StartAtLoginController.h; sourceTree = "<group>"; };
+		34E5A74817E72836005F74FF /* StartAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartAtLoginController.m; path = Classes/StartAtLoginController.m; sourceTree = "<group>"; };
+		34E5A74B17E73827005F74FF /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Frameworks/Sparkle.framework; sourceTree = "<group>"; };
+		34E5A75017E74A6D005F74FF /* AXAlert_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AXAlert_pub.pem; path = Resources/AXAlert_pub.pem; sourceTree = "<group>"; };
+		34E5A75217E75FA9005F74FF /* app.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = app.icns; path = Resources/app.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		344A78CA17E13F8800017C28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344A78D117E13F8800017C28 /* Cocoa.framework in Frameworks */,
+				34E5A74C17E73827005F74FF /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		344A78C417E13F8800017C28 = {
+			isa = PBXGroup;
+			children = (
+				34E5A74F17E74A65005F74FF /* Resources */,
+				344A78D617E13F8800017C28 /* AXAlert */,
+				344A78CF17E13F8800017C28 /* Frameworks */,
+				344A78CE17E13F8800017C28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		344A78CE17E13F8800017C28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				344A78CD17E13F8800017C28 /* AXAlert.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		344A78CF17E13F8800017C28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				344A78D017E13F8800017C28 /* Cocoa.framework */,
+				344A78D217E13F8800017C28 /* Other Frameworks */,
+				34E5A74B17E73827005F74FF /* Sparkle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		344A78D217E13F8800017C28 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				344A78D317E13F8800017C28 /* AppKit.framework */,
+				344A78D417E13F8800017C28 /* CoreData.framework */,
+				344A78D517E13F8800017C28 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		344A78D617E13F8800017C28 /* AXAlert */ = {
+			isa = PBXGroup;
+			children = (
+				344A78E217E13F8800017C28 /* AppDelegate.h */,
+				344A78E317E13F8800017C28 /* AppDelegate.m */,
+				34B5488117E170BE00358C92 /* Classes */,
+				344A78E517E13F8800017C28 /* MainMenu.xib */,
+				344A78D717E13F8800017C28 /* Supporting Files */,
+			);
+			path = AXAlert;
+			sourceTree = "<group>";
+		};
+		344A78D717E13F8800017C28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				344A78D817E13F8800017C28 /* AXAlert-Info.plist */,
+				344A78D917E13F8800017C28 /* InfoPlist.strings */,
+				344A78DC17E13F8800017C28 /* main.m */,
+				344A78DE17E13F8800017C28 /* AXAlert-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		34B5488117E170BE00358C92 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				34B5487E17E170B900358C92 /* KeyboardEventLeaker.h */,
+				34B5487F17E170B900358C92 /* KeyboardEventLeaker.m */,
+				341DC7F817E6DCD5003E45FD /* MainMessageView.h */,
+				341DC7F917E6DCD5003E45FD /* MainMessageView.m */,
+				341DC7F417E5EB42003E45FD /* NotificationKeys.h */,
+				341DC7F517E6D7C9003E45FD /* NSString+KeyEvent.h */,
+				341DC7F617E6D7C9003E45FD /* NSString+KeyEvent.m */,
+				34E5A74517E72836005F74FF /* PreferencesController.h */,
+				34E5A74617E72836005F74FF /* PreferencesController.m */,
+				34E5A74717E72836005F74FF /* StartAtLoginController.h */,
+				34E5A74817E72836005F74FF /* StartAtLoginController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		34E5A74F17E74A65005F74FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				34E5A75217E75FA9005F74FF /* app.icns */,
+				34E5A75017E74A6D005F74FF /* AXAlert_pub.pem */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		344A78CC17E13F8800017C28 /* AXAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344A78EA17E13F8800017C28 /* Build configuration list for PBXNativeTarget "AXAlert" */;
+			buildPhases = (
+				344A78C917E13F8800017C28 /* Sources */,
+				344A78CA17E13F8800017C28 /* Frameworks */,
+				344A78CB17E13F8800017C28 /* Resources */,
+				34E5A74D17E7472D005F74FF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AXAlert;
+			productName = AXAlert;
+			productReference = 344A78CD17E13F8800017C28 /* AXAlert.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		344A78C517E13F8800017C28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = pqrs.org;
+			};
+			buildConfigurationList = 344A78C817E13F8800017C28 /* Build configuration list for PBXProject "AXAlert" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 344A78C417E13F8800017C28;
+			productRefGroup = 344A78CE17E13F8800017C28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				344A78CC17E13F8800017C28 /* AXAlert */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		344A78CB17E13F8800017C28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344A78DB17E13F8800017C28 /* InfoPlist.strings in Resources */,
+				344A78E717E13F8800017C28 /* MainMenu.xib in Resources */,
+				34E5A75117E74A6D005F74FF /* AXAlert_pub.pem in Resources */,
+				34E5A75317E75FA9005F74FF /* app.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		344A78C917E13F8800017C28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344A78DD17E13F8800017C28 /* main.m in Sources */,
+				344A78E417E13F8800017C28 /* AppDelegate.m in Sources */,
+				34B5488017E170B900358C92 /* KeyboardEventLeaker.m in Sources */,
+				341DC7F717E6D7C9003E45FD /* NSString+KeyEvent.m in Sources */,
+				341DC7FA17E6DCD5003E45FD /* MainMessageView.m in Sources */,
+				34E5A74917E72836005F74FF /* PreferencesController.m in Sources */,
+				34E5A74A17E72836005F74FF /* StartAtLoginController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		344A78D917E13F8800017C28 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				344A78DA17E13F8800017C28 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		344A78E517E13F8800017C28 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				344A78E617E13F8800017C28 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		344A78E817E13F8800017C28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		344A78E917E13F8800017C28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		344A78EB17E13F8800017C28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AXAlert/AXAlert-Prefix.pch";
+				INFOPLIST_FILE = "AXAlert/AXAlert-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		344A78EC17E13F8800017C28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AXAlert/AXAlert-Prefix.pch";
+				INFOPLIST_FILE = "AXAlert/AXAlert-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		344A78C817E13F8800017C28 /* Build configuration list for PBXProject "AXAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344A78E817E13F8800017C28 /* Debug */,
+				344A78E917E13F8800017C28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344A78EA17E13F8800017C28 /* Build configuration list for PBXNativeTarget "AXAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344A78EB17E13F8800017C28 /* Debug */,
+				344A78EC17E13F8800017C28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 344A78C517E13F8800017C28 /* Project object */;
+}
