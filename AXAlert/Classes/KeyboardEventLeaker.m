@@ -23,9 +23,15 @@ static CGEventRef eventTapCallBack(CGEventTapProxy proxy, CGEventType type, CGEv
       CGEventTapEnable(self.eventTap, true);
       break;
 
-    default:
+    case kCGEventKeyDown:
+    case kCGEventKeyUp:
+    case kCGEventFlagsChanged:
       [[NSNotificationCenter defaultCenter] postNotificationName:kKeyDownNotification
                                                           object:[NSEvent eventWithCGEvent:event]];
+      break;
+
+    default:
+      // Do nothing
       break;
   }
 
