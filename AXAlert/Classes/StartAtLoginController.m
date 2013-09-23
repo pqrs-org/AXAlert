@@ -34,6 +34,10 @@
     }
   }
 
+  if (retval) {
+    CFRetain(retval);
+  }
+
   return retval;
 }
 
