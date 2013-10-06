@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>69D9754A-5776-4A13-9377-2B6F3856CE52</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AXAlert</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E996A189-CA51-4794-BA99-828AC1FFBB77</key>
+		<string>ssh://github.com/tekezo/AXAlert.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AXAlert.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E996A189-CA51-4794-BA99-828AC1FFBB77</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/tekezo/AXAlert.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E996A189-CA51-4794-BA99-828AC1FFBB77</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E996A189-CA51-4794-BA99-828AC1FFBB77</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AXAlert</string>
+		</dict>
+	</array>
+</dict>
+</plist>
