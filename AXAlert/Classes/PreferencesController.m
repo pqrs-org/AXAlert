@@ -11,7 +11,7 @@
     [startAtLogin_ setState:NSOffState];
   }
 
-  [version_ setStringValue:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]];
+  [version_ setStringValue:[[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"]];
 }
 
 - (IBAction) setStartAtLogin:(id)sender
