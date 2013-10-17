@@ -1,5 +1,8 @@
 #!/bin/sh
 
+CODESIGN_IDENTITY="Developer ID Application: Fumihiko Takayama (G43BCU2T37)"
+
+# --------------------------------------------------
 PATH=/bin:/sbin:/usr/bin:/usr/sbin; export PATH
 
 make clean all
@@ -14,6 +17,9 @@ pkgroot="AXAlert-$version"
 rm -f $pkgroot.dmg
 rm -rf $pkgroot
 mkdir $pkgroot
+
+# sign
+codesign --sign "$CODESIGN_IDENTITY" build/Release/AXAlert.app
 
 # copy files
 rsync -a build/Release/AXAlert.app $pkgroot
