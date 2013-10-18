@@ -16,12 +16,11 @@ output_progress() {
 }
 
 # ------------------------------------------------------------
-# sign app
-output_progress "codesign $1"
-codesign --force --sign "$CODESIGN_IDENTITY" "$1"
-
-# sign Framework
-for f in `find "$1" -name '*.framework'`; do
+# sign
+for f in \
+    `find "$1" -name '*.app'` \
+    `find "$1" -name '*.framework'`; \
+    do
     output_progress "codesign $f"
-    codesign --force --sign "$CODESIGN_IDENTITY" "$f"
+    codesign --force --sign "$CODESIGN_IDENTITY" "$1"
 done
