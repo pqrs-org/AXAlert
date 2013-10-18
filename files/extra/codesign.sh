@@ -11,10 +11,20 @@ if [ ! -e "$1" ]; then
 fi
 
 # ------------------------------------------------------------
-echo -ne '\033[33;40m'
-echo "code sign $1"
-echo -ne '\033[0m'
+for f in \
+    `find "$1" -name '*.app'` \
+    `find "$1" -name '*.framework'` \
+    ; do
 
-echo -ne '\033[31;40m'
-codesign --force --sign "$CODESIGN_IDENTITY" "$1"
-echo -ne '\033[0m'
+    echo -ne '\033[33;40m'
+    echo "code sign $f"
+    echo -ne '\033[0m'
+
+    echo -ne '\033[31;40m'
+    codesign \
+        --force \
+        --ignore-resources \
+        --sign "$CODESIGN_IDENTITY" \
+        "$f"
+    echo -ne '\033[0m'
+done

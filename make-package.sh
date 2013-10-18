@@ -16,12 +16,7 @@ rm -rf $pkgroot
 mkdir $pkgroot
 
 # codesign
-for f in \
-    `find build/Release -name '*.app'` \
-    `find build/Release -name '*.framework'` \
-    ; do
-    bash files/extra/codesign.sh "$f"
-done
+bash files/extra/codesign.sh build/Release
 
 # copy files
 rsync -a build/Release/AXAlert.app $pkgroot
