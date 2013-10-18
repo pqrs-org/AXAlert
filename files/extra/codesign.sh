@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 CODESIGN_IDENTITY="Developer ID Application: Fumihiko Takayama (G43BCU2T37)"
 
@@ -11,16 +11,10 @@ if [ ! -e "$1" ]; then
 fi
 
 # ------------------------------------------------------------
-output_progress() {
-    echo "\033[33;40m""$1""\033[0m"
-}
+echo -ne '\033[33;40m'
+echo "code sign $1"
+echo -ne '\033[0m'
 
-# ------------------------------------------------------------
-# sign
-for f in \
-    `find "$1" -name '*.app'` \
-    `find "$1" -name '*.framework'`; \
-    do
-    output_progress "codesign $f"
-    codesign --force --sign "$CODESIGN_IDENTITY" "$f"
-done
+echo -ne '\033[31;40m'
+codesign --force --sign "$CODESIGN_IDENTITY" "$1"
+echo -ne '\033[0m'
