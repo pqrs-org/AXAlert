@@ -16,7 +16,7 @@ rm -rf $pkgroot
 mkdir $pkgroot
 
 # codesign
-sh files/extra/codesign.sh build/Release/AXAlert.app
+sh files/extra/codesign.sh build/Release
 
 # copy files
 rsync -a build/Release/AXAlert.app $pkgroot

@@ -22,5 +22,5 @@ for f in \
     `find "$1" -name '*.framework'`; \
     do
     output_progress "codesign $f"
-    codesign --force --sign "$CODESIGN_IDENTITY" "$1"
+    codesign --force --sign "$CODESIGN_IDENTITY" "$f"
 done
