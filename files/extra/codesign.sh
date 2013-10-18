@@ -11,6 +11,7 @@ if [ ! -e "$1" ]; then
 fi
 
 # ------------------------------------------------------------
+# sign
 for f in \
     `find "$1" -name '*.app'` \
     `find "$1" -name '*.framework'` \
@@ -23,8 +24,16 @@ for f in \
     echo -ne '\033[31;40m'
     codesign \
         --force \
-        --ignore-resources \
         --sign "$CODESIGN_IDENTITY" \
         "$f"
+    echo -ne '\033[0m'
+done
+
+# verify
+for f in \
+    `find "$1" -name '*.app'` \
+    ; do
+    echo -ne '\033[31;40m'
+    codesign --verify --deep-verify "$f"
     echo -ne '\033[0m'
 done
